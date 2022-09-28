@@ -1,0 +1,150 @@
+@import './colors';
+@import './media-queries';
+
+#price-navbar{
+    .navbar-container{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        background: linear-gradient(to right,$price-primary-color-1,$price-primary-color-2,$price-primary-color-3,$price-primary-color-4,$price-primary-color-5);
+        position: fixed;
+        width: 100vw;
+        box-shadow: 10px 10px 15px $trasparent-color;
+
+
+        &-link{
+            padding: 1.2em;
+            background: linear-gradient(to right,$price-secondary-color-1,$price-secondary-color-2,$price-secondary-color-3,$price-secondary-color-4,$price-secondary-color-5);
+            height: 30px;
+            display: flex;
+            align-items: center;
+            transform: skewX(-25deg);
+            box-shadow: 5px 5px 8px $trasparent-color;
+
+            @include tablet{
+                height: 60px;
+                width: 720px;
+            }
+
+            @include mobile{
+                width: 330px;
+            }
+
+
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                @include mobile{
+                    justify-content: center;
+                    padding-left: 1.5rem;
+                }
+
+                li{
+                    height: 2.4em;
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+
+                    #nav-vittoria-peace-film-fest{
+                        @include tablet{
+                            visibility: hidden;
+                            position: relative;
+                        }
+                    }
+
+                    #nav-vittoria-peace-film-fest::after{
+                        @include tablet{
+                            visibility: visible;
+                            position: absolute;
+                            top: 10px;
+                            left: 0;
+                            content: "Vittoria Film Fest";
+                        }
+                    }
+
+                    #nav-le-nostre-sale,
+                    #nav-link,
+                    #nav-vittoria-peace-film-fest,
+                    #nav-cineclub-dessai-mostre,
+                    #nav-la-nostra-storia,
+                    #nav-trasparenza{
+                        @include mobile{
+                            display: none;
+                        }
+                    }
+
+                    @include tablet{
+                       text-align: center;
+                       border-right: 1px solid $price-secondary-color-1;
+                       padding-right: 6.5px;
+                    }
+
+                    @include mobile{
+                        border: none;
+                        padding: 0;
+                    }
+
+
+                    &:hover{
+                        background-color: $price-primary-color-1;
+                        height: 70px;
+                        border-radius: 10px;
+                        padding: 1rem;
+                    }
+
+                    a{
+                        color: $text-ligh-color;
+                        text-decoration: none;
+
+                        &:hover{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .price-gotop-icon{
+            height: 35px;
+            width: 35px;
+            margin-left: 2rem;
+            background-color: $price-secondary-color-3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+            @include tablet{
+                position: relative;
+                right: 10px;
+            }
+
+            @include mobile{
+                right: 13px;
+            }
+
+            a{
+                
+                i{
+                    color:$price-primary-color-1;                   animation: up-down 3s ease infinite;
+
+                    @keyframes up-down {
+                          0% {
+                            transform: scale(1, 1);
+                          }
+                          50% {
+                            transform: scale(1.5, 1.5);
+                          }
+                          100% {
+                            transform: scale(1, 1);
+                          }
+                    }
+                }
+            } 
+        }  
+    }
+}

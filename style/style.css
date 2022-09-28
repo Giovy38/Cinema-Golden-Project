@@ -384,6 +384,240 @@
   color: #fff;
 }
 
+#prox-hero .prox-hero-container {
+  background: linear-gradient(to right, #4E0D70, #C166F2, #A61DF0, #592F70, #8316BD);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1200px;
+  row-gap: 1.5rem;
+}
+#prox-hero .prox-hero-container .container {
+  box-shadow: 5px 5px 10px rgba(33, 33, 33, 0.815);
+}
+#prox-hero .prox-hero-container .container-film {
+  border-radius: 15px;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #320040, #7c069c, #17041d);
+}
+@media screen and (max-width: 376px) {
+  #prox-hero .prox-hero-container .container-film {
+    width: 335px;
+    height: 517px;
+  }
+}
+#prox-hero .prox-hero-container .container-film img {
+  height: 550px;
+  border-radius: 15px;
+}
+@media screen and (max-width: 376px) {
+  #prox-hero .prox-hero-container .container-film img {
+    height: 480px;
+  }
+}
+
+#price-hero .price-hero-container {
+  width: 100vw;
+  height: 1200px;
+  background-image: url(/images/rows-of-red-seats-in-a-theater.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#price-hero .price-hero-container-info {
+  background-color: rgba(33, 33, 33, 0.815);
+  height: 476px;
+  width: 950px;
+  margin-top: 10rem;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  box-shadow: 5px 5px 10px #C35544;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  #price-hero .price-hero-container-info {
+    width: 735px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #price-hero .price-hero-container-info {
+    width: 333px;
+    height: 550px;
+  }
+}
+#price-hero .price-hero-container-info h1 {
+  font-size: 40px;
+  margin-bottom: 0.5rem;
+  color: #B81800;
+}
+#price-hero .price-hero-container-info p {
+  font-size: 25px;
+  color: #fff;
+}
+#price-hero .price-hero-container-info hgroup {
+  box-shadow: 5px 5px 10px #C35544;
+  border-radius: 15px;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 376px) {
+  #price-hero .price-hero-container-info hgroup {
+    margin-bottom: 2.5rem;
+  }
+}
+
+#price-navbar .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: linear-gradient(to right, #380700, #C35544, #B81800, #762519, #480b01);
+  position: fixed;
+  width: 100vw;
+  box-shadow: 10px 10px 15px rgba(33, 33, 33, 0.815);
+}
+#price-navbar .navbar-container-link {
+  padding: 1.2em;
+  background: linear-gradient(to right, #F02618, #BD4C44, #a3362f, #c47873, #70120B);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  transform: skewX(-25deg);
+  box-shadow: 5px 5px 8px rgba(33, 33, 33, 0.815);
+}
+@media screen and (max-width: 768px) {
+  #price-navbar .navbar-container-link {
+    height: 60px;
+    width: 720px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #price-navbar .navbar-container-link {
+    width: 330px;
+  }
+}
+#price-navbar .navbar-container-link ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 376px) {
+  #price-navbar .navbar-container-link ul {
+    justify-content: center;
+    padding-left: 1.5rem;
+  }
+}
+#price-navbar .navbar-container-link ul li {
+  height: 2.4em;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  #price-navbar .navbar-container-link ul li #nav-vittoria-peace-film-fest {
+    visibility: hidden;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  #price-navbar .navbar-container-link ul li #nav-vittoria-peace-film-fest::after {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: "Vittoria Film Fest";
+  }
+}
+@media screen and (max-width: 376px) {
+  #price-navbar .navbar-container-link ul li #nav-le-nostre-sale,
+#price-navbar .navbar-container-link ul li #nav-link,
+#price-navbar .navbar-container-link ul li #nav-vittoria-peace-film-fest,
+#price-navbar .navbar-container-link ul li #nav-cineclub-dessai-mostre,
+#price-navbar .navbar-container-link ul li #nav-la-nostra-storia,
+#price-navbar .navbar-container-link ul li #nav-trasparenza {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #price-navbar .navbar-container-link ul li {
+    text-align: center;
+    border-right: 1px solid #F02618;
+    padding-right: 6.5px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #price-navbar .navbar-container-link ul li {
+    border: none;
+    padding: 0;
+  }
+}
+#price-navbar .navbar-container-link ul li:hover {
+  background-color: #380700;
+  height: 70px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+#price-navbar .navbar-container-link ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#price-navbar .navbar-container-link ul li a:hover {
+  font-size: 20px;
+}
+#price-navbar .navbar-container .price-gotop-icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 2rem;
+  background-color: #a3362f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  #price-navbar .navbar-container .price-gotop-icon {
+    position: relative;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #price-navbar .navbar-container .price-gotop-icon {
+    right: 13px;
+  }
+}
+#price-navbar .navbar-container .price-gotop-icon a i {
+  color: #380700;
+  -webkit-animation: up-down 3s ease infinite;
+          animation: up-down 3s ease infinite;
+}
+@keyframes up-down {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 section {
   overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
