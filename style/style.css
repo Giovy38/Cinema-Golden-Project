@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: linear-gradient(to right, #320040, #3d0d4a, #241329, #7c069c, #17041d);
+  position: fixed;
+  width: 100vw;
+}
+#navbar .navbar-container-logo {
+  display: none;
+}
+#navbar .navbar-container-logo img {
+  height: 70px;
+  width: 150px;
+}
+#navbar .navbar-container-link {
+  padding: 1.2em;
+  background: linear-gradient(to right, #4E0D70, #C166F2, #A61DF0, #592F70, #8316BD);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  transform: skewX(-25deg);
+  box-shadow: 5px 5px 8px rgba(33, 33, 33, 0.815);
+}
+@media screen and (max-width: 768px) {
+  #navbar .navbar-container-link {
+    height: 60px;
+    width: 720px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #navbar .navbar-container-link {
+    width: 330px;
+  }
+}
+#navbar .navbar-container-link ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 376px) {
+  #navbar .navbar-container-link ul {
+    justify-content: center;
+    padding-left: 1.5rem;
+  }
+}
+#navbar .navbar-container-link ul li {
+  height: 2.4em;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  #navbar .navbar-container-link ul li #nav-vittoria-peace-film-fest {
+    visibility: hidden;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  #navbar .navbar-container-link ul li #nav-vittoria-peace-film-fest::after {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: "Vittoria Film Fest";
+  }
+}
+@media screen and (max-width: 376px) {
+  #navbar .navbar-container-link ul li #nav-le-nostre-sale,
+#navbar .navbar-container-link ul li #nav-link,
+#navbar .navbar-container-link ul li #nav-vittoria-peace-film-fest,
+#navbar .navbar-container-link ul li #nav-cineclub-dessai-mostre,
+#navbar .navbar-container-link ul li #nav-la-nostra-storia,
+#navbar .navbar-container-link ul li #nav-trasparenza {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #navbar .navbar-container-link ul li {
+    text-align: center;
+    border-right: 1px solid #4E0D70;
+    padding-right: 6.5px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #navbar .navbar-container-link ul li {
+    border: none;
+    padding: 0;
+  }
+}
+#navbar .navbar-container-link ul li:hover {
+  background-color: #320040;
+  height: 70px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+#navbar .navbar-container-link ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar .navbar-container-link ul li a:hover {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
