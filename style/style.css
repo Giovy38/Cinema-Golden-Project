@@ -329,7 +329,7 @@
 #footer {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 376px) {
   #footer {
     display: block;
   }
@@ -491,6 +491,7 @@
   position: fixed;
   width: 100vw;
   box-shadow: 10px 10px 15px rgba(33, 33, 33, 0.815);
+  z-index: 2;
 }
 #price-navbar .navbar-container-link {
   padding: 1.2em;
