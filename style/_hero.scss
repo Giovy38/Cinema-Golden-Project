@@ -1,0 +1,185 @@
+#hero{
+    .hero-container{
+        width: 100vw;
+        height: 1800px;
+        background: linear-gradient(to right,$primary-color-1,$primary-color-2,$primary-color-3,$primary-color-4,$primary-color-5);
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        @include tablet{
+            height: 3000px;
+        }
+
+        &-left{
+            width: 50vw;
+            // height: 1200px;
+            padding: 3rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            @include mobile{
+                display: none;
+            }
+
+            .logo-container{
+              
+                width: 500px;
+                height: 800px;
+                margin-top: 7rem;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &-cinema{
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 1fr;
+                    gap: 1.25rem;
+                    width: 500px;
+
+                    box-shadow: 5px 5px 10px $secondary-color-2;
+                    padding: 1.5rem;
+                    border-radius: 5px;
+
+                    @include tablet{
+                        grid-template-columns: repeat(1, 1fr);
+                        width: 290px;
+                    }
+                    
+
+                    #hero-black-logo{
+                        height: 87px;
+                    }
+                    #hero-logo{
+                        height: 87px;   
+                    }
+                    #hero-lumiere{
+                        height: 87px;
+                    }
+                }
+
+                &-school{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.25rem;
+                    margin-top: 5rem;
+
+                    box-shadow: 5px 5px 10px $secondary-color-2;
+                    padding: 1.5rem;
+                    border-radius: 5px;
+
+                    #hero-18app{
+                        height: 87px;
+                    }
+                    #hero-18app:hover{
+                        height: 220px;
+                    }
+
+                    #hero-carta-docenti{
+                        height: 87px;   
+                    }
+                    #hero-carta-docenti:hover{
+                        height: 220px;   
+                    }
+
+                    #hero-fblogo{
+                        height: 67px;
+                        border-radius: 10px;
+                    }
+                    #hero-fblogo:hover{
+                        height: 120px;
+                        border-radius: 30px;
+                    }
+
+                }
+
+                &-prenotation{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 5rem;
+                    
+                    box-shadow: 5px 5px 10px $secondary-color-2;
+                    padding: 1.5rem;
+                    border-radius: 5px;
+
+                    animation: zoom-in-out 5s ease infinite ;
+
+                    @keyframes zoom-in-out {
+                          0% {
+                            transform: scale(0.5, 0.5);
+                          }
+                          50% {
+                            transform: scale(1, 1);
+                          }
+                          100% {
+                            transform: scale(0.5, 0.5);
+                          }
+                    }
+
+                    @include tablet{
+                        animation: none;
+                    }
+
+                    label{
+                        color: $text-ligh-color;
+                        font-size: 18px;
+                    }
+                }
+
+                
+            }
+        }
+
+        &-right{
+            background: linear-gradient(to right,$secondary-color-1,$secondary-color-2,$secondary-color-3,$secondary-color-4,$secondary-color-5);
+            padding: 6rem 0 0 3rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 1.5rem;
+
+            @include tablet{
+                grid-template-columns: repeat(1, 1fr);
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include mobile{
+                width: 100vw;
+            }
+
+            .container{
+                box-shadow: 5px 5px 10px $trasparent-color;
+
+                &-film{
+                    border-radius: 15px;
+                    height: 420px;
+                    width: 235px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem;
+                    background: linear-gradient(to right, $primary-color-1, $primary-color-4,$primary-color-5);
+
+                    img{
+                        height: 320px;
+                        border-radius: 15px;
+                       }
+
+                    h1{
+                        font-size: 35px;
+                    }
+
+                    h3{
+                        font-size: 17px;
+                    }
+                }
+            }
+           
+        }
+    }
+}
