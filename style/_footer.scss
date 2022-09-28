@@ -1,0 +1,65 @@
+#footer{
+    display: none;
+
+    @include tablet{
+        display: block;
+    }
+
+    .footer-container{
+        height: 130px;
+        background: linear-gradient(to right,$primary-color-5,$primary-color-4,$primary-color-3,$primary-color-2,$primary-color-1);
+
+        &-logo{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            justify-content: center;
+            height: 130px;
+
+            &-cinema{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: left;
+                padding-left: 2.5em;
+
+                img{
+                    height: 40px;
+                }
+            }
+
+            &-school{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                #footer-18app{
+                    height: 40px;
+                }
+                #footer-carta-docenti{
+                    height: 40px;
+                }
+                #footer-fblogo{
+                    height: 30px;
+                    border-radius: 5px;
+                }
+
+            }
+
+            &-prenotation{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: 60px;
+                }
+
+                label{
+                    color: $text-ligh-color;
+                }
+            }
+        }
+    }
+}

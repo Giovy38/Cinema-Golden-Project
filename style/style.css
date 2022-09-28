@@ -326,6 +326,64 @@
   font-size: 17px;
 }
 
+#footer {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    display: block;
+  }
+}
+#footer .footer-container {
+  height: 130px;
+  background: linear-gradient(to right, #17041d, #7c069c, #241329, #3d0d4a, #320040);
+}
+#footer .footer-container-logo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+}
+#footer .footer-container-logo-cinema {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  padding-left: 2.5em;
+}
+#footer .footer-container-logo-cinema img {
+  height: 40px;
+}
+#footer .footer-container-logo-school {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer-container-logo-school #footer-18app {
+  height: 40px;
+}
+#footer .footer-container-logo-school #footer-carta-docenti {
+  height: 40px;
+}
+#footer .footer-container-logo-school #footer-fblogo {
+  height: 30px;
+  border-radius: 5px;
+}
+#footer .footer-container-logo-prenotation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer-container-logo-prenotation img {
+  height: 60px;
+}
+#footer .footer-container-logo-prenotation label {
+  color: #fff;
+}
+
 section {
   overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
