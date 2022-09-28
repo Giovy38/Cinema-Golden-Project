@@ -301,6 +301,18 @@
     width: 100vw;
   }
 }
+#hero .hero-container-right #cinema-logo {
+  display: none;
+}
+@media screen and (max-width: 376px) {
+  #hero .hero-container-right #cinema-logo {
+    display: block;
+    width: 250px;
+    box-shadow: 5px 5px 10px rgba(33, 33, 33, 0.815);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+}
 #hero .hero-container-right .container {
   box-shadow: 5px 5px 10px rgba(33, 33, 33, 0.815);
 }

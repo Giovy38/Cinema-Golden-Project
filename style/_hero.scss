@@ -151,6 +151,18 @@
                 width: 100vw;
             }
 
+            #cinema-logo{
+                display: none;
+
+                @include mobile{
+                    display: block;
+                    width: 250px;
+                    box-shadow: 5px 5px 10px $trasparent-color;
+                    border-radius: 5px;
+                    padding: 1rem;
+                }
+            }
+
             .container{
                 box-shadow: 5px 5px 10px $trasparent-color;
 
@@ -177,6 +189,7 @@
                     h3{
                         font-size: 17px;
                     }
+
                 }
             }
            
