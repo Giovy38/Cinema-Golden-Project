@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
-@import './navbar';
-@import './hero';
-@import './footer';
-@import './prox-hero';
-@import './price-hero';
-@import './price-navbar';
+// PAGES IMPORT
+
+    @import './navbar';
+    @import './hero';
+    @import './footer';
+    @import './prox-hero';
+    @import './price-hero';
+    @import './price-navbar';
+    @import './sale-hero';
+
+// UTILIES
+    @import './utilies';
 
 
 section{

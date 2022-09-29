@@ -39,3 +39,8 @@
         $price-secondary-color-4:#c47873;
         $price-secondary-color-5:#70120B;
         
+    // BACKGROUND
+        // -----------------------------------------------------------
+        $background-lighter: linear-gradient(to right,$secondary-color-1,$secondary-color-2,$secondary-color-3,$secondary-color-4,$secondary-color-5);
+        //------------------------------------------------------------
+        $background-darker: linear-gradient(to right,$primary-color-1,$primary-color-2,$primary-color-3,$primary-color-4,$primary-color-5);

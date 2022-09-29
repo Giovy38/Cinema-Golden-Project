@@ -8,7 +8,7 @@
         align-items: center;
         justify-content: center;
         height: 80px;
-        background: linear-gradient(to right,$primary-color-1,$primary-color-2,$primary-color-3,$primary-color-4,$primary-color-5);
+        background: $background-darker;
         position: fixed;
         width: 100vw;
         box-shadow: 10px 10px 15px $trasparent-color;
@@ -16,7 +16,7 @@
 
         &-link{
             padding: 1.2em;
-            background: linear-gradient(to right,$secondary-color-1,$secondary-color-2,$secondary-color-3,$secondary-color-4,$secondary-color-5);
+            background: $background-lighter;
             height: 30px;
             display: flex;
             align-items: center;
