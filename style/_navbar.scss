@@ -4,9 +4,8 @@
 #navbar{
     .navbar-container{
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter();
+
         height: 80px;
         background: $background-darker;
         position: fixed;
@@ -113,9 +112,7 @@
             width: 35px;
             margin-left: 2rem;
             background-color: $secondary-color-3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter();
             border-radius: 5px;
 
             @include tablet{

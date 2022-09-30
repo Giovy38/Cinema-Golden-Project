@@ -4,9 +4,7 @@
 #price-navbar{
     .navbar-container{
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter();
         height: 80px;
         background: linear-gradient(to right,$price-primary-color-1,$price-primary-color-2,$price-primary-color-3,$price-primary-color-4,$price-primary-color-5);
         position: fixed;
@@ -114,9 +112,7 @@
             width: 35px;
             margin-left: 2rem;
             background-color: $price-secondary-color-3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter();
             border-radius: 5px;
 
             @include tablet{

@@ -60,9 +60,7 @@
                 }
 
                 &-school{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flexCenter();
                     gap: 1.25rem;
                     margin-top: 5rem;
 
@@ -96,9 +94,7 @@
                 }
 
                 &-prenotation{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flexCenter();
                     flex-direction: column;
                     margin-top: 5rem;
                     
